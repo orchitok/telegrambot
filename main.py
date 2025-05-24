@@ -29,7 +29,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
-    await message.answer(f"Ahoy, {message.from_user.full_name}! Ask me anythin', matey!")
+    await message.answer(f"Ahoy, {message.from_user.full_name}! Ask me anythin', pirate!")
 
 
 @dp.message()
@@ -57,3 +57,4 @@ async def main() -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
+
